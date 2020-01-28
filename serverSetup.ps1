@@ -1,4 +1,13 @@
-﻿[System.Environment]::SetEnvironmentVariable('SCOOP', "$env:USERPROFILE\scoop", [System.EnvironmentVariableTarget]::User)
+﻿echo '   _____      __  __  _                __  __            '
+echo '  / ___/___  / /_/ /_(_)___  ____ _   / / / /___         '
+echo '  \__ \/ _ \/ __/ __/ / __ \/ __ `/  / / / / __ \        '
+echo ' ___/ /  __/ /_/ /_/ / / / / /_/ /  / /_/ / /_/ /  _ _ _ '
+echo '/____/\___/\__/\__/_/_/ /_/\__, /   \____/ .___/  (_|_|_)'
+echo '                          /____/        /_/              '
+
+
+
+[System.Environment]::SetEnvironmentVariable('SCOOP', "$env:USERPROFILE\scoop", [System.EnvironmentVariableTarget]::User)
 
 ## scoop third-party buckets
 scoop bucket add 'scoop-completion' 'https://github.com/Moeologist/scoop-completion'
