@@ -1,7 +1,0 @@
-2020-01-28 13:59:14: -- Analysis Started by On File Change, After Delay, Under Runner
-2020-01-28 13:59:14: Changes: 2, Conflicts: 0, CopyTime: 0, FixState: 0, Errors: 0, All: 108
-2020-01-28 13:59:14: Left to Right: Rename/Move File/Folder: 2 
-2020-01-28 13:59:14: == Sync Started by On File Change, After Delay, Under Runner
-2020-01-28 13:59:14: Move File D:/Nuts/Windows/Scripts/Automation/Trace-Word.ps1 -> D:/Nuts/Windows/Scripts/Libs/Trace-Word.ps1
-2020-01-28 13:59:14: == Sync Complete. Time: 00:00:00, Speed: 0.00/s, OK: 2, Errors: 0
-2020-01-28 13:59:14: 

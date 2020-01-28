@@ -1,7 +1,0 @@
-2020-01-15 22:49:44: -- Analysis Started by On File Change, After Delay, Under Runner
-2020-01-15 22:49:44: Changes: 2, Conflicts: 0, CopyTime: 0, FixState: 0, Errors: 0, All: 101
-2020-01-15 22:49:44: Left to Right: Rename/Move File/Folder: 2 
-2020-01-15 22:49:44: == Sync Started by On File Change, After Delay, Under Runner
-2020-01-15 22:49:44: Move File D:/Nuts/Windows/Scripts/Automation/Register-BwLiteDB.ps1 -> D:/Nuts/Windows/Scripts/Automation/bwUtils.ps1
-2020-01-15 22:49:44: == Sync Complete. Time: 00:00:00, Speed: 0 bytes/s, OK: 2, Errors: 0
-2020-01-15 22:49:44: 

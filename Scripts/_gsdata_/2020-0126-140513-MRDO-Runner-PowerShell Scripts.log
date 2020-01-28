@@ -1,7 +1,0 @@
-2020-01-26 14:05:14: -- Analysis Started by On File Change, After Delay, Under Runner
-2020-01-26 14:05:14: Changes: 1, Conflicts: 0, CopyTime: 0, FixState: 0, Errors: 0, All: 108
-2020-01-26 14:05:14: Left to Right: Copy File: 1 
-2020-01-26 14:05:14: == Sync Started by On File Change, After Delay, Under Runner
-2020-01-26 14:05:14: Copy Over 'C:/Users/Reno/Documents/Scripts/Automation/Persist-Env.ps1' -> 'D:/Nuts/Windows/Scripts/Automation/Persist-Env.ps1' (228)
-2020-01-26 14:05:14: == Sync Complete. Time: 00:00:00, Speed: 0.00/s, OK: 1, Errors: 0
-2020-01-26 14:05:14: 

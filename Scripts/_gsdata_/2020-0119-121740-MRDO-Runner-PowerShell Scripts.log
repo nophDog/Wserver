@@ -1,7 +1,0 @@
-2020-01-19 12:17:42: -- Analysis Started by On File Change, After Delay, Under Runner
-2020-01-19 12:17:42: Changes: 1, Conflicts: 0, CopyTime: 0, FixState: 0, Errors: 0, All: 105
-2020-01-19 12:17:42: Left to Right: Copy File: 1 
-2020-01-19 12:17:42: == Sync Started by On File Change, After Delay, Under Runner
-2020-01-19 12:17:42: Copy New 'C:/Users/Reno/Documents/Scripts/Automation/Find-Type.ps1' -> 'D:/Nuts/Windows/Scripts/Automation/Find-Type.ps1' (168)
-2020-01-19 12:17:42: == Sync Complete. Time: 00:00:00, Speed: 0 bytes/s, OK: 1, Errors: 0
-2020-01-19 12:17:42: 

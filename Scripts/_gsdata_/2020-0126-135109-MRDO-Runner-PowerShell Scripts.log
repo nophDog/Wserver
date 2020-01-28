@@ -1,8 +1,0 @@
-2020-01-26 13:51:10: -- Analysis Started by On File Change, After Delay, Under Runner
-2020-01-26 13:51:10: Changes: 1, Conflicts: 0, CopyTime: 0, FixState: 0, Errors: 0, All: 108
-2020-01-26 13:51:10: Left to Right: Copy File: 1 
-2020-01-26 13:51:10: == Sync Started by On File Change, After Delay, Under Runner
-2020-01-26 13:51:10: Copy New 'C:/Users/Reno/Documents/Scripts/Automation/Persist-Env.ps1' -> 'D:/Nuts/Windows/Scripts/Automation/Persist-Env.ps1' (47)
-2020-01-26 13:51:10: Deleted Recycled: D:/Nuts/Windows/Scripts/_gsdata_/_saved_/Automation/Invoke-PotPlayer.ps1
-2020-01-26 13:51:10: == Sync Complete. Time: 00:00:00, Speed: 0.00/s, OK: 1, Errors: 0
-2020-01-26 13:51:10: 

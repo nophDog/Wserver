@@ -1,7 +1,0 @@
-2020-01-16 12:51:29: -- Analysis Started by On File Change, After Delay, Under Runner
-2020-01-16 12:51:29: Changes: 1, Conflicts: 0, CopyTime: 0, FixState: 0, Errors: 0, All: 102
-2020-01-16 12:51:29: Left to Right: Name Case Change: 1 
-2020-01-16 12:51:29: == Sync Started by On File Change, After Delay, Under Runner
-2020-01-16 12:51:29: Change Name Case: Move File D:/Nuts/Windows/Scripts/Automation/bwUtils.ps1 -> D:/Nuts/Windows/Scripts/Automation/BwUtils.ps1
-2020-01-16 12:51:29: == Sync Complete. Time: 00:00:00, Speed: 0 bytes/s, OK: 1, Errors: 0
-2020-01-16 12:51:29: 
