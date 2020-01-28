@@ -1,0 +1,7 @@
+2020-01-16 14:36:57: -- Analysis Started by On File Change, After Delay, Under Runner
+2020-01-16 14:36:57: Changes: 2, Conflicts: 0, CopyTime: 0, FixState: 0, Errors: 0, All: 103
+2020-01-16 14:36:57: Left to Right: Rename/Move File/Folder: 2 
+2020-01-16 14:36:57: == Sync Started by On File Change, After Delay, Under Runner
+2020-01-16 14:36:57: Move File D:/Nuts/Windows/Scripts/Automation/Register-PhoneLiteDB.ps1 -> D:/Nuts/Windows/Scripts/Automation/PhoneUtils.ps1
+2020-01-16 14:36:57: == Sync Complete. Time: 00:00:00, Speed: 0 bytes/s, OK: 2, Errors: 0
+2020-01-16 14:36:57: 

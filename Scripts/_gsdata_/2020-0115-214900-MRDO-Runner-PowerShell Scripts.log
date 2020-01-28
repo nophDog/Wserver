@@ -1,0 +1,7 @@
+2020-01-15 21:49:01: -- Analysis Started by On File Change, After Delay, Under Runner
+2020-01-15 21:49:01: Changes: 1, Conflicts: 0, CopyTime: 0, FixState: 0, Errors: 0, All: 98
+2020-01-15 21:49:01: Left to Right: Copy File: 1 
+2020-01-15 21:49:01: == Sync Started by On File Change, After Delay, Under Runner
+2020-01-15 21:49:01: Copy Over 'C:/Users/Reno/Documents/Scripts/Automation/Register-BwLiteDB.ps1' -> 'D:/Nuts/Windows/Scripts/Automation/Register-BwLiteDB.ps1' (561)
+2020-01-15 21:49:02: == Sync Complete. Time: 00:00:01, Speed: 0 bytes/s, OK: 1, Errors: 0
+2020-01-15 21:49:02: 

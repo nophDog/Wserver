@@ -1,0 +1,7 @@
+2020-01-15 16:04:05: -- Analysis Started by On File Change, After Delay, Under Runner
+2020-01-15 16:04:05: Changes: 1, Conflicts: 0, CopyTime: 0, FixState: 0, Errors: 0, All: 95
+2020-01-15 16:04:05: Left to Right: Copy File: 1 
+2020-01-15 16:04:05: == Sync Started by On File Change, After Delay, Under Runner
+2020-01-15 16:04:05: Copy Over 'C:/Users/Reno/Documents/Scripts/Automation/ScoopUtils.ps1' -> 'D:/Nuts/Windows/Scripts/Automation/ScoopUtils.ps1' (4,008)
+2020-01-15 16:04:05: == Sync Complete. Time: 00:00:00, Speed: 0 bytes/s, OK: 1, Errors: 0
+2020-01-15 16:04:05: 

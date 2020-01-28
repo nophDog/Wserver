@@ -1,0 +1,7 @@
+2020-01-16 14:41:42: -- Analysis Started by On File Change, After Delay, Under Runner
+2020-01-16 14:41:42: Changes: 1, Conflicts: 0, CopyTime: 0, FixState: 0, Errors: 0, All: 103
+2020-01-16 14:41:42: Left to Right: Copy File: 1 
+2020-01-16 14:41:42: == Sync Started by On File Change, After Delay, Under Runner
+2020-01-16 14:41:42: Copy Over 'C:/Users/Reno/Documents/Scripts/Automation/PhoneUtils.ps1' -> 'D:/Nuts/Windows/Scripts/Automation/PhoneUtils.ps1' (1,719)
+2020-01-16 14:41:42: == Sync Complete. Time: 00:00:00, Speed: 0 bytes/s, OK: 1, Errors: 0
+2020-01-16 14:41:42: 

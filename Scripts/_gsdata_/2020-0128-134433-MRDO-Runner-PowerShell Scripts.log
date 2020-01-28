@@ -1,0 +1,8 @@
+2020-01-28 13:44:34: -- Analysis Started by On File Change, After Delay, Under Runner
+2020-01-28 13:44:34: Changes: 1, Conflicts: 0, CopyTime: 0, FixState: 0, Errors: 0, All: 108
+2020-01-28 13:44:34: Left to Right: Copy File: 1 
+2020-01-28 13:44:34: == Sync Started by On File Change, After Delay, Under Runner
+2020-01-28 13:44:34: Copy Over 'C:/Users/Reno/Documents/Scripts/Automation/ScoopUtils.ps1' -> 'D:/Nuts/Windows/Scripts/Automation/ScoopUtils.ps1' (9,438)
+2020-01-28 13:44:34: Deleted Recycled: D:/Nuts/Windows/Scripts/_gsdata_/_saved_/Jobs/BingWallpaperV2.ps1
+2020-01-28 13:44:34: == Sync Complete. Time: 00:00:00, Speed: 0.00/s, OK: 1, Errors: 0
+2020-01-28 13:44:34: 

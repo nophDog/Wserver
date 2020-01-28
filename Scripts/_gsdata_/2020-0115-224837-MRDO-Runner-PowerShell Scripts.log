@@ -1,0 +1,7 @@
+2020-01-15 22:48:38: -- Analysis Started by On File Change, After Delay, Under Runner
+2020-01-15 22:48:38: Changes: 2, Conflicts: 0, CopyTime: 0, FixState: 0, Errors: 0, All: 100
+2020-01-15 22:48:38: Left to Right: Rename/Move File/Folder: 2 
+2020-01-15 22:48:38: == Sync Started by On File Change, After Delay, Under Runner
+2020-01-15 22:48:38: Move File D:/Nuts/Windows/Scripts/Automation/Test-Command.ps1 -> D:/Nuts/Windows/Scripts/Garbage/Test-Command.ps1
+2020-01-15 22:48:38: == Sync Complete. Time: 00:00:00, Speed: 0 bytes/s, OK: 2, Errors: 0
+2020-01-15 22:48:38: 

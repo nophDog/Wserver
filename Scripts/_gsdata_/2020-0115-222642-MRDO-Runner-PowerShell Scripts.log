@@ -1,0 +1,7 @@
+2020-01-15 22:26:43: -- Analysis Started by On File Change, After Delay, Under Runner
+2020-01-15 22:26:43: Changes: 1, Conflicts: 0, CopyTime: 0, FixState: 0, Errors: 0, All: 99
+2020-01-15 22:26:43: Left to Right: Copy File: 1 
+2020-01-15 22:26:43: == Sync Started by On File Change, After Delay, Under Runner
+2020-01-15 22:26:43: Copy New 'C:/Users/Reno/Documents/Scripts/Automation/Test-Command.ps1' -> 'D:/Nuts/Windows/Scripts/Automation/Test-Command.ps1' (299)
+2020-01-15 22:26:43: == Sync Complete. Time: 00:00:00, Speed: 0 bytes/s, OK: 1, Errors: 0
+2020-01-15 22:26:43: 

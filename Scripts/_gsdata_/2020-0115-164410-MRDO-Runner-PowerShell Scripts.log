@@ -1,0 +1,7 @@
+2020-01-15 16:44:11: -- Analysis Started by On File Change, After Delay, Under Runner
+2020-01-15 16:44:11: Changes: 1, Conflicts: 0, CopyTime: 0, FixState: 0, Errors: 0, All: 96
+2020-01-15 16:44:11: Left to Right: Delete File: 1 
+2020-01-15 16:44:11: == Sync Started by On File Change, After Delay, Under Runner
+2020-01-15 16:44:11: Delete File 'D:/Nuts/Windows/Scripts/Automation/Find-PhoneNum.ps1'
+2020-01-15 16:44:11: == Sync Complete. Time: 00:00:00, Speed: 0 bytes/s, OK: 1, Errors: 0
+2020-01-15 16:44:11: 

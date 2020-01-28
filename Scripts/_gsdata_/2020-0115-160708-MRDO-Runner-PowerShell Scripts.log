@@ -1,0 +1,7 @@
+2020-01-15 16:07:09: -- Analysis Started by On File Change, After Delay, Under Runner
+2020-01-15 16:07:09: Changes: 1, Conflicts: 0, CopyTime: 0, FixState: 0, Errors: 0, All: 96
+2020-01-15 16:07:09: Left to Right: Copy File: 1 
+2020-01-15 16:07:09: == Sync Started by On File Change, After Delay, Under Runner
+2020-01-15 16:07:09: Copy New 'C:/Users/Reno/Documents/Scripts/Automation/Find-PhoneNum.ps1' -> 'D:/Nuts/Windows/Scripts/Automation/Find-PhoneNum.ps1' (49)
+2020-01-15 16:07:09: == Sync Complete. Time: 00:00:00, Speed: 0 bytes/s, OK: 1, Errors: 0
+2020-01-15 16:07:09: 
