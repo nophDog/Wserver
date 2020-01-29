@@ -1,0 +1,7 @@
+7Zip4Powershell
+Connectimo
+posh-git
+PoshGram
+PSLiteDB
+PSSharedGoods
+PSWriteColor
