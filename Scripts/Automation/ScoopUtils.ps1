@@ -5,23 +5,23 @@
     Param(
             [Parameter(ValueFromPipeline=$true, Position=0)]
             [string[]] $Content,
-            [Parameter(Position=1)] 
+            [Parameter(Position=1)]
             [ValidateNotNull()]
             [String[]] $Words = $(throw "Provide word[s] to be highlighted!")
     )
-    
+
     Begin
     {
-        
-        # Modified By re0j @ 2019-12-17 20:02:19 
+
+        # Modified By re0j @ 2019-12-17 20:02:19
         Function paletteConst{
 
             [System.Collections.ArrayList]$palette = @('DarkBlue','DarkGreen','DarkCyan', `
                                         'DarkRed','DarkMagenta','DarkYellow','DarkGray',  `
                                         'Blue','Green','Cyan','Red','Magenta','Yellow')
-        
+
             $paletteDict = @{}
-        
+
             For($i=0; $i -lt 13; $i++) {
                 # index to pick
                 if (($palette.Count -1) -eq 0) {
@@ -29,38 +29,38 @@
                 } else {
                     $init = Get-Random -Minimum 0 -Maximum ($palette.Count - 1)
                 }
-        
+
         # tpido
                     $picked = $palette[$init]
-            
+
                     # assign it to hashtable with ordered index
                     $paletteDict[$i] = $picked
-            
+
                     # remove picked from original arraylist
                     $palette.Remove($picked)
                 }
-            
+
                 return $paletteDict
             }
 
-        $Color = paletteConst 
+        $Color = paletteConst
         # Modify END
 
-        # $Color = @{       
-                    # 0='Yellow'      
-                    # 1='Magenta'     
-                    # 2='Red'         
-                    # 3='Cyan'        
-                    # 4='Green'       
-                    # 5 ='Blue'        
-                    # 6 ='DarkGray'    
-                    # 7 ='Gray'        
-                    # 8 ='DarkYellow'    
-                    # 9 ='DarkMagenta'    
-                    # 10='DarkRed'     
-                    # 11='DarkCyan'    
-                    # 12='DarkGreen'    
-                    # 13='DarkBlue'        
+        # $Color = @{
+                    # 0='Yellow'
+                    # 1='Magenta'
+                    # 2='Red'
+                    # 3='Cyan'
+                    # 4='Green'
+                    # 5 ='Blue'
+                    # 6 ='DarkGray'
+                    # 7 ='Gray'
+                    # 8 ='DarkYellow'
+                    # 9 ='DarkMagenta'
+                    # 10='DarkRed'
+                    # 11='DarkCyan'
+                    # 12='DarkGreen'
+                    # 13='DarkBlue'
         # }
 
         $ColorLookup =@{}
@@ -79,14 +79,14 @@
             $ColorLookup.Add($words[$i],$Color[$j])
             $j++
         }
-        
+
     }
     Process
     {
     $content | ForEach-Object {
-    
+
         $TotalLength = 0
-               
+
         $_.split() | `
         Where-Object {-not [string]::IsNullOrWhiteSpace($_)} | ` #Filter-out whiteSpaces
         ForEach-Object{
@@ -95,46 +95,46 @@
                             #"TotalLength : $TotalLength"
                             $Token =  $_
                             $displayed= $False
-                            
+
                             Foreach($Word in $Words)
                             {
                                 if($Token -like "*$Word*")
                                 {
                                     $Before, $after = $Token -Split "$Word"
-                              
-                                        
+
+
                                     #"[$Before][$Word][$After]{$Token}`n"
-                                    
-                                    Write-Host $Before -NoNewline ; 
+
+                                    Write-Host $Before -NoNewline ;
                                     Write-Host $Word -NoNewline -Fore Black -Back $ColorLookup[$Word];
-                                    Write-Host $after -NoNewline ; 
-                                    $displayed = $true                                   
-                                    #Start-Sleep -Seconds 1    
-                                    #break  
+                                    Write-Host $after -NoNewline ;
+                                    $displayed = $true
+                                    #Start-Sleep -Seconds 1
+                                    #break
                                 }
 
-                            } 
+                            }
                             If(-not $displayed)
-                            {   
-                                Write-Host "$Token " -NoNewline                                    
+                            {
+                                Write-Host "$Token " -NoNewline
                             }
                             else
                             {
-                                Write-Host " " -NoNewline  
+                                Write-Host " " -NoNewline
                             }
                             $TotalLength = $TotalLength + $Token.Length  + 1
                         }
                         else
-                        {                      
-                            Write-Host '' #New Line  
-                            $TotalLength = 0 
+                        {
+                            Write-Host '' #New Line
+                            $TotalLength = 0
 
                         }
 
                             #Start-Sleep -Seconds 0.5
-                        
+
         }
-        Write-Host '' #New Line               
+        Write-Host '' #New Line
     }
     }
     end
@@ -173,15 +173,15 @@ function ss{
 
     # keyword pattern constructor
     function patternConst($KeywordList){
-        
+
         return '(' + ($KeywordList -join '|') + ')'
     }
-    
+
     $pattern = patternConst($Keyword)
 
     # . $env:USERPROFILE\Documents\Scripts\Libs\Trace-Word.ps1
     if ($Dsrip) {
-        
+
         $right = [char]::ConvertFromUtf32(0x1F449) # 👉
 
         # Search In Also Comment
@@ -200,7 +200,7 @@ function ss{
     Sort-Object -Property Length |
     ForEach-Object { ($_ -in (Get-Content -Path "$env:SCOOP\installed.app")) ? $_ + " $installedSign" : $_ } |
     Trace-Word -Words $Keyword
-    
+
     }
 
 
@@ -218,7 +218,7 @@ function ss{
 
 # SCOOP INSTALL <PACKAGE>
 function sii {
-    
+
     param(
         [Parameter(Mandatory=$true)]
         [ArgumentCompleter(
@@ -228,7 +228,11 @@ function sii {
                 Where-Object -FilterScript { $_.StartsWith($WordToComplete, "CurrentCultureIgnoreCase") }
             }
         )]
-        $Package
+        $Package,
+
+        [ValidateSet('32bit','64bit')]
+        $Arch=((Get-CimInstance CIM_OperatingSystem).OSArchitecture -replace '-','')
+        # https://ridicurious.com/2018/10/17/4-ways-to-find-os-architecture-using-powershell-32-or-64-bit/
     )
 
     scoop install $Package
