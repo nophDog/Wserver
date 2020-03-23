@@ -11,15 +11,15 @@ function Register-BwLiteDB {
             }
         )]
 		$DataBase,
-        
+
         [string]
         $Collection
 	)
-    
+
     if (Get-Command -Name pypinyin -ErrorAction Ignore) {
         } else {
         Write-Host -Object 'Install program pypinyin first.' -ForegroundColor Red
-        echo 'Exiting'
+        Write-Output 'Exiting'
         return
 
         }
@@ -41,7 +41,7 @@ function Find-BwItem {
 	Param(
         [ValidateSet('_id','abbr','username','password')]
 	    $Field='abbr',
-        
+
         [Parameter(Position=0)]
         $Pattern,
 
@@ -64,4 +64,5 @@ function Find-BwItem {
 }
 
 
-## Last Modified 👉🏻 2020-01-15 22:49:04
+## Last Modified 👉🏻 2020-02-13 15:18:04
+

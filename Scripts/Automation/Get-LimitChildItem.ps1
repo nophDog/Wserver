@@ -36,7 +36,7 @@
 	for ($i=1;$i-lt$($MaxDepth+1);$i++){
 		$SearchPath = $Path + ("\*"*$i)
 		$ResultObject = Get-ChildItem -Path $SearchPath -ErrorAction SilentlyContinue
-		$PathList = $ResultObject|Where {!$_.PSIsContainer} |ForEach-Object { if ($_.Name -like $Filter){$_.FullName}}
+		$PathList = $ResultObject| Where-Object {!$_.PSIsContainer} |ForEach-Object { if ($_.Name -like $Filter){$_.FullName}}
 		$HashTable = @{
 			Depth = $i
 			Count = $PathList.Length

@@ -32,17 +32,23 @@ function ls {
 						} else {
 
 							##--> Blue : VIDEO
+							##--> DarkGreen : PICTURES
 							##--> Green : EXECUTABLE
 							##--> DarkRed : COMPRESSED
+							##--> Cyan : POWERSHELL SCRIPTS
 							if ($_ -match '\.(mp4|mkv)$') {
 									Write-Host -Object $_ -ForegroundColor Blue
 								} elseif ($_ -match '\.(exe|msi)$') {
 										Write-Host -Object $_ -ForegroundColor Green
 									} elseif ($_ -match '\.(zip|tar|gzip|rar)$') {
 											Write-Host -Object $_ -ForegroundColor DarkRed
-										} else {
-												Write-Host -Object $_ -ForegroundColor Gray
-											}
+										} elseif ($_ -match '\.(jpg|png|jpeg|gif)$') {
+												Write-Host -Object $_ -ForegroundColor DarkGreen
+											} elseif ($_ -match '\.(ps1)$') {
+													Write-Host -Object $_ -ForegroundColor Cyan
+												} else {
+														Write-Host -Object $_ -ForegroundColor Gray
+													}
 
 								$file += 1
 							}}
