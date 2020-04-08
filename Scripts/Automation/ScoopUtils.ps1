@@ -186,20 +186,20 @@ function ss{
 
         # Search In Also Comment
         Get-ChildItem -Path "$env:SCOOP\buckets" -Recurse -Filter '*.json' |
-        ForEach-Object { $_.BaseName + " $right " + (Get-Content -Path $_.FullName |
-        ConvertFrom-Json).description} |
-        Where-Object -FilterScript { $_ -imatch $pattern } |
-        Tee-Object -Variable total |
-        Trace-Word -Words $Keyword
+            ForEach-Object { $_.BaseName + " $right " + (Get-Content -Path $_.FullName |
+                ConvertFrom-Json).description} |
+                    Where-Object -FilterScript { $_ -imatch $pattern } |
+                        Tee-Object -Variable total |
+                            Trace-Word -Words $Keyword
 
     } else {
 
     (Get-ChildItem -Path "$env:SCOOP\buckets\" -Recurse -File -Filter '*.json').BaseName |
-    Where-Object {$_ -imatch $pattern} |
-    Tee-Object -Variable total |
-    Sort-Object -Property Length |
-    ForEach-Object { ($_ -in (Get-Content -Path "$env:SCOOP\installed.app")) ? $_ + " $installedSign" : $_ } |
-    Trace-Word -Words $Keyword
+        Where-Object {$_ -imatch $pattern} |
+            Tee-Object -Variable total |
+                Sort-Object -Property Length |
+                    ForEach-Object { ($_ -in (Get-Content -Path "$env:SCOOP\installed.app")) ? $_ + " $installedSign" : $_ } |
+                        Trace-Word -Words $Keyword
 
     }
 
@@ -225,7 +225,7 @@ function sii {
             {
                 param($Command, $Parameter, $WordToComplete, $CommandAst, $FakeBoundParams)
                 Get-Content -Path "$env:SCOOP\notinstalled.app" |
-                Where-Object -FilterScript { $_.StartsWith($WordToComplete, "CurrentCultureIgnoreCase") }
+                    Where-Object -FilterScript { $_.StartsWith($WordToComplete, "CurrentCultureIgnoreCase") }
             }
         )]
         $Package,
@@ -277,7 +277,7 @@ function sci {
             {
                 param($Command, $Parameter, $WordToComplete, $CommandAst, $FakeBoundParams)
                 Get-Content -Path "$env:SCOOP\installed.app", "$env:SCOOP\notinstalled.app" |
-                Where-Object -FilterScript { $_.StartsWith($WordToComplete, "CurrentCultureIgnoreCase") }
+                    Where-Object -FilterScript { $_.StartsWith($WordToComplete, "CurrentCultureIgnoreCase") }
             }
         )]
         $Package
@@ -295,7 +295,7 @@ function sui {
             {
                 param($Command, $Parameter, $WordToComplete, $CommandAst, $FakeBoundParams)
                 Get-Content -Path "$env:SCOOP\installed.app" |
-                Where-Object -FilterScript { $_.StartsWith($WordToComplete, "CurrentCultureIgnoreCase") }
+                    Where-Object -FilterScript { $_.StartsWith($WordToComplete, "CurrentCultureIgnoreCase") }
             }
         )]
         $Package
