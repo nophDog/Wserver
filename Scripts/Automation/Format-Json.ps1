@@ -2,8 +2,8 @@
 
 function Format-Json {
     param (
-        $Path
+        $Json
     )
 
-    Get-Content -Path $Path | jq
+    $Json | jq
 }
