@@ -4,6 +4,6 @@
         $Pattern
 	)
 
-    [System.AppDomain]::CurrentDomain.GetAssemblies().GetTypes() |
+    ([System.AppDomain]::CurrentDomain.GetAssemblies().GetTypes()).Name |
     Select-String $Pattern
 }
